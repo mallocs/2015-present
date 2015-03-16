@@ -1,0 +1,26 @@
+{
+    "expr": true,
+    "curly": false,
+    "eqeqeq": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "sub": true,
+    "undef": true,
+    "unused": true,
+    "boss": true,
+    "eqnull": true,
+    "browser": true,
+    "predef": ["jQuery", "google"],
+    "globals": {
+        "jQuery": true,
+        "ClusterManager": true,
+        "YAHOO": true,
+        "OCR_RESIZE_PANEL_INIT": true,
+        "SheriffIncidentsCallback": true,
+        "define": true,
+        "require": true,
+        "module": true
+    }
+}
