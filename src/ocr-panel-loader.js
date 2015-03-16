@@ -71,11 +71,11 @@ var MMI_getPanel = function(click) {
     if(click) {
         var date = new Date();
         var img = new Image();
-            img.src = "http://www.ocnewsmap.com/img/dot_clear.gif?uncache=" + date.getTime() + "&type=tabclick&page=" + document.URL;
+//           img.src = "http://www.ocnewsmap.com/img/dot_clear.gif?uncache=" + date.getTime() + "&type=tabclick&page=" + document.URL;
     }
 
-    Get.css("/src/ocr-panel-all.css");
-    Get.script("/src/ocr-panel-all.js");
+    Get.css("src/ocr-panel-all.css");
+    Get.script("src/ocr-panel-all.js");
 };
 
 var MMI_loader = function(click) {
