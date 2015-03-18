@@ -10,36 +10,53 @@
         body {
             margin: 0;
         }
+        
         h1 {
             margin: 0;
             font-size: 4.5rem;
             font-family: Kalam, sans-serif;
             font-weight: 400;
         }
+        
+        h2 {
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+        
+        h3 {
+            margin: 0.5rem;
+        }
+        
         dl {
             font-size: 2rem;
         }
+        
         dt {
             margin-bottom: 0.5rem;
         }
+        
         iframe {
             border: none;
         }
+        
         .textbox ul {
             list-style-type: disc;
-            max-width: 80%;
         }
+        
         #container {
             margin: 40px auto;
             height: 100%;
             max-width: 100%;
         }
+        
         .mmi-footer {
             text-align: center;
         }
+        
         .main-carousel > .slide {
             min-height: 700px;
         }
+        
         .slide.textbox,
         .slide.otherbox {
             display: -webkit-box;
@@ -51,21 +68,30 @@
             flex-direction: column;
             justify-content: center;
         }
+        
         .ocr-panel {
             margin: 30px auto 0 auto;
         }
+        
         .otherbox section {
             margin: 20px auto;
         }
+        
         .textbox section,
         .textbox header,
         .otherbox header,
         .otherbox p {
             margin: 0 auto;
         }
+        
+        .textbox > section,
         .otherbox header,
-        .otherbox > section > p {
-            max-width: 85%;
+        .otherbox > section {
+            max-width: 80%;
+        }
+        
+        .codesection {
+            width: 80%;
         }
     </style>
 
@@ -83,19 +109,59 @@
 
 
                         <li class="slide textbox">
-
                             <section>
                                 <header>
                                     <h1>Marcus Ulrich</h1>
                                 </header>
-                                <br>
-                                <dl>
-                                    <dt>Projects</dt>
-                                    <dd>
-                                        <dl>MMI Slideshow</dl>
-                                        <dl>OCR Panel and ClusterManager</dl>
-                                    </dd>
-                                </dl>
+                                <h2>Projects</h2>
+                                <ul>
+                                    <li>MMI Slideshow</li>
+                                    <li>OCR Panel and ClusterManager</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h1>My Background</h1>
+                            </header>
+                            <section>
+                                <h3>Why am I a programmer?</h3>
+                                <ul>
+                                    <li>I like building things with words and imagining new processes and interfaces.</li>
+                                </ul>
+                                <h3>Education: UC Davis</h3>
+                                <ul>
+                                    <li>I majored in Math because it was my weakest subject. I struggled at first, but graduated with around 3.5 in my Math/CS classes.</li>
+                                    <li>I played a lot with OpenBSD. I didn't really know what I was doing, but I loved the configuration over convention attitude.</li>
+                                    <li>I even ran my own Sendmail server. I hated that its configuration file is so complex you have to run it through a compiler.</li>
+                                </ul>
+                                <h3>Training: The Orange County Register</h3>
+                                <ul>
+                                    <li>I started out posting the newspaper stories to the web site.</li>
+                                    <li>I wrote a Python script to scrape the site and gather statistics, so I could better understand how the people with more experience placed stories and rewrote headlines.</li>
+                                    <li>Mashups were big at the time (chicagocrime.com), so I decided to put the data I was gathering on a Google Map. People liked it and eventually I was asked spend more time working on Google Maps.</li>
+                                    <li>I built the OCR Panel and ClusterManager to help manage our maps functionality.</li>
+                                </ul>
+                                <h3>Perspective: Spain and Euskadi (The Basque Country)</h3>
+                                <ul>
+                                    <li>I wanted to take a few years to do things completely differently.
+                                        <ul>
+                                            <li>Program in different languages: Objective C and Java</li>
+                                            <li>Speak in different languages and understand different cultures: Spanish, Basque, and French</li>
+                                            <li>Use a different world interface: Roundabouts, public transit (I'm a Californian), light switches you tap instead of flip and countless other little details.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Also I wanted to ride a motorcycle through the Alps.</li>
+                                </ul>
+                                <h3>Now!</h3>
+                                <ul>
+                                    <li>Studying Machine Learning and a few other things with Coursera.</li>
+                                    <li>Writing MMI Slideshow so I have an easier way to manage my photos without giving them to Facebook/Flickr/Instagram/etc.</li>
+                                    <li>I've always hated CSS, so I decided the best way to learn it was to memorize as much of the spec as possible.</li>
+                                    <li>Various side projects.</li>
+                                </ul>
                             </section>
                         </li>
 
@@ -106,9 +172,11 @@
                                     <h1>MMI Slideshow - Goals</h1>
                                 </header>
                                 <br>
-                                <h2>Why?</h2> 
+                                <h2>Why?</h2>
                                 <ul>
-                                    <li>Half the Internet is slideshows. The other half is web apps with images.</li>
+                                    <li>I like writing software I use. This slideshow is an MMI Slideshow.</li>
+                                    <li>Half the Internet is slideshows: Facebook, Twitter, Flickr, Instagram, every media website ...</li>
+                                    <li>The other half is web apps with images that could probably be better managed.</li>
                                     <li>HTML5 picture element really needs the help of front and/or back end scripting.</li>
                                     <li>Since pictures are half the Internet (and also the other half), we can optimize a lot by using the picture element.</li>
                                 </ul>
@@ -132,20 +200,28 @@
                             </section>
                         </li>
 
+
+
+
                         <li class="slide textbox">
                             <section>
                                 <header>
-                                    <h1>MMI Slideshow - Design options</h1>
+                                    <h1>MMI Slideshow - Design models</h1>
                                 </header>
                                 <br>
-                                <h2>Small, like Bootstrap Carousel</h2>
+                                <h2>Bootstrap Carousel</h2>
                                 <ul>
                                     <li>Good: Nice separation of concerns.</li>
+                                    <li>Good: Somewhat of an industry standard.</li>
                                     <li>Bad: Why do I have to put the navigation elements into the HTML!?</li>
+                                    <li>Bad: Navigation elements in HTML means it can't (easily) be changed from the script.</li>
+                                    <li>Bad: Imagine thousnds of slideshows in a CMS which now has to use new a new theme with the CSS: .active { display: none; }</li>
                                 </ul>
-                                <h2>Big, like LA Times Slideshows</h2>
+                                <h2>LA Times Slideshows</h2>
                                 <ul>
                                     <li>Good: Works beautifully. Sends different images based on screen resolution.</li>
+                                    <li>Good: Probably extensively usability tested.</li>
+                                    <li>Bad: Doesn't seem to be open source.</li>
                                     <li>Bad: Wow, that's some complicated HTML.</li>
                                 </ul>
                             </section>
@@ -153,15 +229,36 @@
 
 
 
+                        <li class="slide otherbox">
+                            <section class="codesection">
+                                <h1>Bootstrap carousel code</h1>
+                                <p data-height="600" data-theme-id="0" data-slug-hash="PwXYVX" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/PwXYVX/'>PwXYVX</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
+                            </section>
+                        </li>                        
 
+                        
+                        
 
                         <li class="slide otherbox">
-                            <section>
-                                <h2>Hopefully a code example of the LA Times slideshow HTML.</h2>
+                            <section class="codesection">
+                                <h1>LA Times slideshow HTML</h1>
+                                <p data-height="600" data-theme-id="0" data-slug-hash="myabBx" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/myabBx/'>myabBx</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
                             </section>
                         </li>
-
-
+                        
+                        
+                        
+                        
+                        
+                        <li class="slide otherbox">
+                            <section class="codesection">
+                                <h1>MMI Slideshow code</h1>
+<p data-height="400" data-theme-id="0" data-slug-hash="zxyYEp" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/zxyYEp/'>zxyYEp</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
+                            </section>
+                        </li>                        
 
 
 
@@ -183,36 +280,50 @@
                                 <h1>MMI Slideshow - Examples</h1>
                             </header>
                             <section>
-                                <div style="margin-left: auto; margin-right: auto; height: 300px; width: 500px; margin-bottom: 80px;" class="mmi-slideshow" data-height="300px" data-width="500px" data-transition="fade">
-                                    <ul class="carousel">
-                                        <li class="slide">
-                                            <img src="http://placehold.it/500x300/e87000/000" data-caption="First picture" data-credit="mmi">
-                                        </li>
-                                        <li class="slide">
-                                            <img data-src="http://placehold.it/500x300/003807/000" data-caption="Second picture" data-credit="mmi">
-                                        </li>
-                                        <li class="slide">
-                                            <img data-src="http://placehold.it/500x300/006ce8/000" data-caption="Third picture" data-credit="mmi">
-                                        </li>
-                                        <li class="slide">
-                                            <img data-src="http://placehold.it/500x300/006c18/000" data-caption="Fourth picture" data-credit="mmi">
-                                        </li>
-                                    </ul>
-                                </div>
 
-                                <div style="margin-left: auto; margin-right: auto; height: 300px; width: 500px;" class="mmi-slideshow" data-height="300px" data-width="500px" data-transition="fade" data-inside="true" data-pagination="numbers">
+
+
+
+                                <div class="mmi-slideshow" data-pagination="sprite" data-sprite="http://old.mallocs.net/img/20130504-euskadiko-berde/sprite.jpg" data-transition="fade" data-loop="true" data-width="666px">
                                     <ul class="carousel">
                                         <li class="slide">
-                                            <img src="http://placehold.it/500x300/e87000/000" data-caption="First picture" data-credit="mmi">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/01.jpg" data-caption="Nafarroa! The journey begins.">
                                         </li>
                                         <li class="slide">
-                                            <img data-src="http://placehold.it/500x300/003807/000" data-caption="Second picture" data-credit="mmi">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/02.jpg" data-caption="Tanatorioa (the mortuary) next to the church. Convenient.">
                                         </li>
                                         <li class="slide">
-                                            <img data-src="http://placehold.it/500x300/006ce8/000" data-caption="Third picture" data-credit="mmi">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/03.jpg" data-caption="Bar Ameztia in Santesteban. Chicken with mushrooms and roquefort bocadillo for 4.50€.">
                                         </li>
                                         <li class="slide">
-                                            <img data-src="http://placehold.it/500x300/006c18/000" data-caption="Fourth picture" data-credit="mmi">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/04.jpg" data-caption="Hillsides dotted with wool. ">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/05.jpg" data-caption="The Marauder actually makes a pretty fun dirt bike too!">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/06.jpg" data-caption="Two hours on this road and I didn't pass anyone but villagers.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/07.jpg" data-caption="I passed more waterfalls than people. ">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/08.jpg" data-caption="I passed a lot more waterfalls than people. ">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/09.jpg" data-caption="NA-4453 between Oronoz-Mugaire and Landibar.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/10.jpg" data-caption="This is a tree. Seriously. This is what it looked like. Blinding!">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/11.jpg" data-caption="Help! I'm trapped in a Grant Wood painting, but all the houses look funny.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/12.jpg" data-caption="Help! I'm trapped in a Grant Wood painting, but all the houses look funny.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/13.jpg" data-caption="I admit. I often add saturation to my photos, but this is 100% pure Basque country green.">
                                         </li>
                                     </ul>
                                 </div>
@@ -310,6 +421,7 @@
                             <header>
                                 <h1>OCR Panel Example</h1>
                             </header>
+
                             <div id="ocr-resize-panel1" class="ocr-panel" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.62148091503237, -117.78030395507812" zoomLevel="10" content="map/normal" footer_message="A simple example" layers='[{src: " http://www.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=112238113762835356772.00045fea7f54095a3ab1f&output=nl", text: "Bank Robberies", img: ""}]' src="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=nl&msid=108703241669937569803.0004771691b7c7bcb4ded" style="width:600px; height: 600px;">
                                 <div style="padding:200px 0px 200px 0px; background-color:#E5E3DF;">
                                     <center>Loading...
@@ -450,8 +562,9 @@
     </div>
 
     <script src="src/mmi-slideshow.bundle.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
-    <script id="ocr-resize-panel-script" type="text/javascript" src="src/ocr-panel-loader.js?v=1"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <script type="text/javascript" ssrc="http://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+    <script id="ocr-resize-panel-script" type="text/javascript" ssrc="src/ocr-panel-loader.js?v=1"></script>
 
     <script type="text/javascript">
         $(function () {
