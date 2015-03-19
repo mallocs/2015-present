@@ -27,6 +27,7 @@
             font-size: 2rem;
             margin: 0.5rem;
         }
+        
         h4 {
             margin: 0.5rem;
         }
@@ -411,9 +412,9 @@
 
 
                         <li class="slide textbox">
-                                <header>
-                                    <h2>OCR Panel Design Options</h2>
-                                </header>
+                            <header>
+                                <h2>OCR Panel Design Options</h2>
+                            </header>
                             <section>
 
                                 <br>
@@ -442,6 +443,9 @@
                             <section>
                                 <br>
                                 <img style="width: 100%;" data-src="img/ocrpanel.png" alt="OCR Panel">
+                                <h4>Example Configuration div</h4>
+                                <p data-height="300" data-theme-id="0" data-slug-hash="vEvLyO" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/vEvLyO/'>vEvLyO</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
                             </section>
                         </li>
 
@@ -451,14 +455,15 @@
                             <header>
                                 <h2>OCR Panel Example</h2>
                             </header>
-
-                            <div id="ocr-resize-panel1" class="ocr-panel" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.62148091503237, -117.78030395507812" zoomLevel="10" content="map/normal" footer_message="A simple example" layers='[{src: "http://www.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=112238113762835356772.00045fea7f54095a3ab1f&output=nl", text: "Bank Robberies", img: ""}]' src="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=nl&msid=108703241669937569803.0004771691b7c7bcb4ded" style="width:600px; height: 600px;">
-                                <div style="padding:200px 0px 200px 0px; background-color:#E5E3DF;">
-                                    <center>Loading...
-                                        <img src="img/loading-circle-ball-transparent.gif">
-                                    </center>
+                            <section>
+                                <div id="ocr-resize-panel1" class="ocr-panel" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.62148091503237, -117.78030395507812" zoomLevel="10" content="map/normal" footer_message="A simple example" layers='[{src: "http://www.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=112238113762835356772.00045fea7f54095a3ab1f&output=nl", text: "Bank Robberies"}]' src="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=nl&msid=108703241669937569803.0004771691b7c7bcb4ded" style="width:600px; height: 600px;">
+                                    <div style="padding:200px 0px 200px 0px; background-color:#E5E3DF;">
+                                        <center>Loading...
+                                            <img src="img/loading-circle-ball-transparent.gif">
+                                        </center>
+                                    </div>
                                 </div>
-                            </div>
+                            </section>
                         </li>
 
 
@@ -478,9 +483,9 @@
 
 
                         <li class="slide textbox">
-                                <header>
-                                    <h2>ClusterManager Design Options</h2>
-                                </header>
+                            <header>
+                                <h2>ClusterManager Design Options</h2>
+                            </header>
                             <section>
                                 <br>
                                 <ul>
@@ -494,9 +499,9 @@
 
 
                         <li class="slide textbox">
-                                <header>
-                                    <h2>Distance-based clustering</h2>
-                                </header>
+                            <header>
+                                <h2>Distance-based clustering</h2>
+                            </header>
                             <section>
                                 <p>For each marker you look at each cluster to see how far it is from the center of the cluster. If the distance is less than a maximum (user specified) distance and the cluster is the closest, then that marker is added to the cluster. If the marker fails to be added to any cluster then a new cluster is created containing that marker.</p>
                                 <p><i>Image and text from <a href="https://developers.google.com/maps/articles/toomanymarkers">https://developers.google.com/maps/articles/toomanymarkers</a></i>
@@ -512,9 +517,9 @@
 
 
                         <li class="slide textbox">
-                                <header>
-                                    <h2>Image-mapped images</h2>
-                                </header>
+                            <header>
+                                <h2>Image-mapped images</h2>
+                            </header>
                             <section>
                                 <p>Basically, not clustering. Take the image below, overlay it on the map, and map out regions to click event handlers.</p>
                                 <p>Example tile overlay:</p>
@@ -528,9 +533,9 @@
                         </li>
 
                         <li class="slide textbox">
-                                <header>
-                                    <h2>Grid-based clustering</h2>
-                                </header>
+                            <header>
+                                <h2>Grid-based clustering</h2>
+                            </header>
                             <section>
                                 <p>Grid-based clustering works by dividing the map into squares of a certain size (the size changes at each zoom) and then grouping the markers into each grid square.</p>
                                 <p>This technique can be rather quick because it only requires iterating through the markers once to see if its position is between a set of coordinates; no complicated distance calculation is needed. It does have some limitations, as you can see marker's 7 and 8 are close together but because they are in separate grids they are not clustered together.</p>
