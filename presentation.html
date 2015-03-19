@@ -27,6 +27,9 @@
             font-size: 2rem;
             margin: 0.5rem;
         }
+        h4 {
+            margin: 0.5rem;
+        }
         
         dl {
             font-size: 2rem;
@@ -366,22 +369,19 @@
                                     <h2>MMI Slideshow - Challenges</h2>
                                 </header>
                                 <br>
+                                <h3>CSS</h3>
                                 <ul>
-                                    <li>CSS:
-                                        <ul>
-                                            <li>Trying to figure out how browsers (are supposed to) calculate an element's height. There's 10 cases: <a href="http://www.w3.org/TR/CSS2/visudet.html#the-height-property">W3C Height Spec</a>
-                                            </li>
-                                            <li>Transitions for modern browsers. Javascript for older ones.</li>
-                                            <li>Use class names. Never ids (for a widget).</li>
-                                            <li>Child selector is safer than decendent selector.</li>
-                                            <li>Pseudo namespaces</li>
-                                        </ul>
+                                    <li>Trying to figure out how browsers (are supposed to) calculate an element's height. There's 10 cases: <a href="http://www.w3.org/TR/CSS2/visudet.html#the-height-property">W3C Height Spec</a>
                                     </li>
-                                    <li>JS: Pretty easy in comparison.
-                                        <ul>
-                                            <li>Trying to use reactive techniques to reflect state rather than storing it.</li>
-                                    </li>
-                                    </ul>
+                                    <li>Transitions for modern browsers. Javascript for older ones.</li>
+                                    <li>Use class names. Never ids (for a widget).</li>
+                                    <li>Child selector is safer than decendent selector.</li>
+                                    <li>Pseudo namespaces</li>
+                                </ul>
+                                <h3>JS - Pretty easy in comparison.</h3>
+                                <ul>
+                                    <li>Trying to use reactive techniques to reflect state rather than storing it.</li>
+                                </ul>
                             </section>
                         </li>
 
@@ -395,7 +395,7 @@
                                 <br>
                                 <h3>Goals</h3>
                                 <ul>
-                                    <li>Easy for reporters to create.</li>
+                                    <li>Fast and easy for reporters to create.</li>
                                     <li>Lazy loading: The panel loads after the rest of the page.</li>
                                     <li>Centralized: A loader file that's never cached points to the newest files that may be cached.</li>
                                     <li>Resizeable since maps are often sidebar elements of a story.</li>
@@ -407,17 +407,21 @@
 
 
                         <li class="slide textbox">
-                            <section>
                                 <header>
                                     <h2>OCR Panel Design Options</h2>
                                 </header>
+                            <section>
+
                                 <br>
                                 <h3>Static, single page</h3>
+                                <h4>-Think of a stand alone site like everyblock.com or even Zillow.</h4>
                                 <ul>
                                     <li>Good: Tried and true method for Google maps</li>
                                     <li>Bad: All that work for only one map!?</li>
                                 </ul>
+                                <br>
                                 <h3>A widget</h3>
+                                <h4>-Instead of a map, this is a configurable container. A reporter can make a layer that can be put on top of any of our other map data.</h4>
                                 <ul>
                                     <li>Good: Reporters will help me make thousands of maps!</li>
                                     <li>Bad: No one (that I could find) had done this.</li>
@@ -476,10 +480,10 @@
 
 
                         <li class="slide textbox">
-                            <section>
                                 <header>
                                     <h2>ClusterManager Design Options</h2>
                                 </header>
+                            <section>
                                 <br>
                                 <ul>
                                     <li>Explicity clustering: K-means, distance.</li>
@@ -492,10 +496,10 @@
 
 
                         <li class="slide textbox">
-                            <section>
                                 <header>
                                     <h2>Distance-based clustering</h2>
                                 </header>
+                            <section>
                                 <p>For each marker you look at each cluster to see how far it is from the center of the cluster. If the distance is less than a maximum (user specified) distance and the cluster is the closest, then that marker is added to the cluster. If the marker fails to be added to any cluster then a new cluster is created containing that marker.</p>
                                 <p><i>Image and text from <a href="https://developers.google.com/maps/articles/toomanymarkers">https://developers.google.com/maps/articles/toomanymarkers</a></i>
                                 </p>
@@ -510,26 +514,26 @@
 
 
                         <li class="slide textbox">
-                            <section>
                                 <header>
                                     <h2>Image-mapped images</h2>
                                 </header>
+                            <section>
                                 <p>Basically, not clustering. Take the image below, overlay it on the map, and map out regions to click event handlers.</p>
                                 <p>Example tile overlay:</p>
                                 <img data-src="img/imagemapcluster.png">
                                 <ul>
                                     <li>Good: This is what Google does!</li>
-                                    <li>Great: O(1)</li>
+                                    <li>Great: O(1), at least on the front end.</li>
                                     <li>Bad: Requires a dedicated image server and an algorithm that can take arbitrary data and turn it into images and image maps.</li>
                                 </ul>
                             </section>
                         </li>
 
                         <li class="slide textbox">
-                            <section>
                                 <header>
                                     <h2>Grid-based clustering</h2>
                                 </header>
+                            <section>
                                 <p>Grid-based clustering works by dividing the map into squares of a certain size (the size changes at each zoom) and then grouping the markers into each grid square.</p>
                                 <p>This technique can be rather quick because it only requires iterating through the markers once to see if its position is between a set of coordinates; no complicated distance calculation is needed. It does have some limitations, as you can see marker's 7 and 8 are close together but because they are in separate grids they are not clustered together.</p>
                                 <p><i>Image and text from <a href="https://developers.google.com/maps/articles/toomanymarkers">https://developers.google.com/maps/articles/toomanymarkers</a></i>
@@ -539,15 +543,15 @@
                                     <li>Good: Pretty fast. O(n) maybe.</li>
                                     <li>Bad: Not very accurate. Really just de-cluttering.</li>
                                     <li>Bad: I couldn't figure out a simple way to set up the grid, but...</li>
-
                                 </ul>
+                                <br>
                             </section>
                         </li>
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
                         <li class="slide textbox">
                             <section>
                                 <header>
@@ -555,7 +559,7 @@
                                 </header>
                                 <p>... This is basically grid-based de-cluttering. There are probably more accurate algorithms for getting a geohash (<a href="http://en.wikipedia.org/wiki/Geohash">http://en.wikipedia.org/wiki/Geohash</a>) since latitude and longitude are angles, but I wanted something simple so I just turned the latitude and longitude into a long binary number and truncated digits for granularity.</p>
                                 <p data-height="460" data-theme-id="0" data-slug-hash="WbLQjQ" data-default-tab="js" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/WbLQjQ/'>WbLQjQ</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                                <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
                                 <br>
                                 <p>To test it, I wrote a boxToPolygon function. I could then take a marker fixture, get its geohash, get the region for the geohash, put both on a map and make sure the marker got put inside the region. Doing this made me realize how common edge cases were (markers near the grid border), so I updated the clusterer to do optional distance-based clustering with neighboring boxes.</p>
                                 <ul>
@@ -565,8 +569,8 @@
                                     <li>Bad: Not very accurate. Really just de-cluttering.</li>
                                 </ul>
                             </section>
-                        </li>                        
-                        
+                        </li>
+
 
                         <li class="slide textbox">
                             <section>
@@ -657,7 +661,7 @@
                         </li>
 
 
-                        </ul>
+                    </ul>
                 </div>
 
             </div>
