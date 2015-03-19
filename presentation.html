@@ -145,7 +145,7 @@
                                 <h3>Education: UC Davis</h3>
                                 <ul>
                                     <li>I majored in Math because it was my weakest subject. I struggled at first, but graduated with around 3.5 in my Math/CS classes.</li>
-                                    <li>I played a lot with OpenBSD. I didn't really know what I was doing, but I loved the configuration over convention attitude.</li>
+                                    <li>I played a lot with OpenBSD. I didn't really know what I was doing, but I loved the configuration over convention attitude. It's secure by default because everything is turned off and you have to turn it on and configure it if you want to use it.</li>
                                     <li>I even ran my own Sendmail server. I hated that its configuration file is so complex you have to run it through a compiler.</li>
                                 </ul>
                                 <h3>Training: The Orange County Register</h3>
@@ -198,6 +198,7 @@
                                 <ul>
                                     <li>Configurable, lazy loading of all <del>images</del> content with an data-src attribute.</li>
                                     <li>Optional thumbnails from a sprite.</li>
+                                    <li>Infinite image loading with JSON.</li>
                                     <li>Usual JavaScript slideshow stuff:
                                         <ul>
                                             <li style="width: 600px;">Pagination, captions, credits, transitions, responsive, swipes and keyboard input, page numbering, play/pause button, show and hide navigation and captions ... and tests!</li>
@@ -245,6 +246,7 @@
                         <li class="slide otherbox">
                             <section class="codesection">
                                 <h2>Bootstrap carousel code</h2>
+                                <h3>Everything is in the HTML so the JavaScript is just adding behavior and the CSS is just adding design.</h3>
                                 <p data-height="600" data-theme-id="0" data-slug-hash="PwXYVX" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/PwXYVX/'>PwXYVX</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
                                 <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
                             </section>
@@ -256,6 +258,8 @@
                         <li class="slide otherbox">
                             <section class="codesection">
                                 <h2>LA Times slideshow HTML</h2>
+                                <h3>Even more stuff in the HTML. Lots of repetition. Lots of extra bandwidth for each image that could be save if it were calculated from JavaScript.</h3>
+                                <h3>But the img tag with data-baseurl is pretty nice. It gets the right image based on the screen size, and so it saves some bandwidth for small screens.</h3>
                                 <p data-height="600" data-theme-id="0" data-slug-hash="myabBx" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/myabBx/'>myabBx</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
                                 <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
                             </section>
