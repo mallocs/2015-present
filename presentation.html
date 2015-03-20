@@ -564,11 +564,11 @@
                                 <header>
                                     <h2>Store markers in a hash</h2>
                                 </header>
-                                <p>... This is basically grid-based de-cluttering. There are probably more accurate algorithms for getting a geohash (<a href="http://en.wikipedia.org/wiki/Geohash">http://en.wikipedia.org/wiki/Geohash</a>) since latitude and longitude are angles, but I wanted something simple so I just turned the latitude and longitude into a long binary number and truncated digits for granularity.</p>
+                                <p>... This is basically grid-based de-cluttering. There are probably more accurate algorithms for getting a geohash (<a href="http://en.wikipedia.org/wiki/Geohash">http://en.wikipedia.org/wiki/Geohash</a>) since latitude and longitude are angles, but I wanted something simple so I just turned the latitude and longitude into a long binary number and truncated digits for granularity. Also, I developed my algorithm before geohash.org was announced.</p>
                                 <p data-height="460" data-theme-id="0" data-slug-hash="WbLQjQ" data-default-tab="js" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/WbLQjQ/'>WbLQjQ</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
                                 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
                                 <br>
-                                <p>To test it, I wrote a boxToPolygon function. I could then take a marker fixture, get its geohash, get the region for the geohash, put both on a map and make sure the marker got put inside the region. Doing this made me realize how common edge cases were (markers near the grid border), so I updated the clusterer to do optional distance-based clustering with neighboring boxes.</p>
+                                <p>To test it, I wrote a boxToPolygon function. I could then take a marker fixture, get its geohash, get the region for the geohash, put both on a map and make sure the marker was inside the region. Doing this made me realize how common edge cases were (markers near the grid border), so I updated the clusterer to do optional distance-based clustering with neighboring boxes.</p>
                                 <ul>
                                     <li>Good: Pretty fast. O(n).</li>
                                     <li>Good: Simple</li>
