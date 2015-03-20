@@ -145,7 +145,7 @@
                                 </ul>
                                 <h3>Education: UC Davis</h3>
                                 <ul>
-                                    <li>I majored in Math because it was my weakest subject. I struggled at first, but graduated with around 3.5 in my Math/CS classes.</li>
+                                    <li>I majored in Math because it was my weakest subject. I struggled at first, but graduated high grades in all my classes.</li>
                                     <li>I played a lot with OpenBSD. I didn't really know what I was doing, but I loved the configuration over convention attitude. It's secure by default because everything is turned off and you have to turn it on and configure it if you want to use it.</li>
                                     <li>I even ran my own Sendmail server. I hated that its configuration file is so complex you have to run it through a compiler.</li>
                                 </ul>
@@ -199,7 +199,8 @@
                                 <h3>Front End</h3>
                                 <ul>
                                     <li>Configurable, lazy loading of all <del>images</del> content with an data-src attribute.</li>
-                                    <li>Optional thumbnails from a sprite.</li>
+                                    <li>Optional thumbnails from a sprite. Thanks to HTTP/2, this might be a bad design decision in the future: <a href="http://http2-explained.readthedocs.org/en/latest/src/http2world.html">http://http2-explained.readthedocs.org/en/latest/src/http2world.html</a>
+                                    </li>
                                     <li>Infinite image loading with JSON.</li>
                                     <li>Usual JavaScript slideshow stuff:
                                         <ul>
@@ -407,6 +408,11 @@
                                     <li>Resizeable since maps are often sidebar elements of a story.</li>
                                     <li>Newspapers exist because of reporters. This should be a tool that makes it easy for reporters to add to data. For example, if there's a fire, reporters can add value by layering real-time data on top of automated data like a weather KML layer from NOAA.</li>
                                 </ul>
+                                <ul>
+                                    <h3>Influences</h3>
+                                    <li><b>TwitterVision</b>: A huge inspiration even if it was a failure. The web will become more real time.</li>
+                                    <li><b>Simile/Exhibit</b>: I learned about module loading by studying the Exhibit code around 2007. I also stated using non-standard HTML attributes to configure my maps after studying Exhibit code. The data-* idea was only being done by Dojo, at the time, and I followed jQuery and YUI more closely.</li>
+                                </ul>
                             </section>
                         </li>
 
@@ -425,14 +431,14 @@
                                 <ul>
                                     <li>Good: Tried and true method for Google maps</li>
                                     <li>Bad: All that work for only one map!?</li>
-                                    <li>Bad: </li>
+                                    <li>Bad: If the data is that valuable by itself, then Google or Zillow will do it.</li>
                                 </ul>
                                 <br>
                                 <h3>A widget</h3>
                                 <h4>-Instead of a map, this is a configurable container. A reporter can make a layer that can be put on top of any of our other map data.</h4>
                                 <ul>
                                     <li>Good: Reporters will help me make thousands of maps!</li>
-                                    <li>Good: </li>
+                                    <li>Good: Highlights the data that reporters generate.</li>
                                     <li>Bad: No one (that I could find) had done this.</li>
                                 </ul>
                             </section>
@@ -549,7 +555,7 @@
                                 <ul>
                                     <li>Good: Pretty fast. O(n) maybe.</li>
                                     <li>Bad: Not very accurate. Really just de-cluttering.</li>
-                                    <li>Bad: I couldn't figure out a simple way to set up the grid, but I didn't try very hard because...</li>
+                                    <li>Bad: I couldn't figure out a simple way to set up the grid, unless ...</li>
                                 </ul>
                                 <br>
                             </section>
@@ -648,7 +654,7 @@
                             <header>
                                 <h2>100 Cups of Coffee in 2 Days</h2>
                             </header>
-                                <p style="max-width:80%;">I tried to go to 100 different coffee places around Orange County in 2 days and drink 1 cup of coffee at each of them and put it all one of my maps in real time. I failed to drink all the coffee, but I learned how to push my webapp even further by using it to do live reporting.</p>
+                            <p style="max-width:80%;">I tried to go to 100 different coffee places around Orange County in 2 days and drink 1 cup of coffee at each of them and put it all one of my maps in real time. I failed to drink all the coffee, but I learned how to push my webapp even further by using it to do live reporting.</p>
                             <section>
 
                                 <br>
