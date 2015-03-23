@@ -183,10 +183,10 @@
 
 
                         <li class="slide textbox">
+                            <header>
+                                <h2>MMI Slideshow - Goals</h2>
+                            </header>
                             <section>
-                                <header>
-                                    <h2>MMI Slideshow - Goals</h2>
-                                </header>
                                 <br>
                                 <h3>Why?</h3>
                                 <ul>
@@ -371,10 +371,10 @@
 
 
                         <li class="slide textbox">
+                            <header>
+                                <h2>MMI Slideshow - Challenges</h2>
+                            </header>
                             <section>
-                                <header>
-                                    <h2>MMI Slideshow - Challenges</h2>
-                                </header>
                                 <br>
                                 <h3>CSS</h3>
                                 <ul>
@@ -488,10 +488,10 @@
 
 
                         <li class="slide textbox">
+                            <header>
+                                <h2>OCR Panel - Challenges</h2>
+                            </header>
                             <section>
-                                <header>
-                                    <h2>OCR Panel - Challenges</h2>
-                                </header>
                                 <br>
                                 <ul>
                                     <li>Loading the right things at the right time.</li>
@@ -568,7 +568,11 @@
                                     <li>Good: Pretty fast. O(n)</li>
                                     <li>Bad: Not very accurate. Really just de-cluttering.</li>
                                     <li>Bad: I couldn't figure out a <b>simple</b> way to set up the grid.
-                                    <ul><li>Grid-box based: Divide the viewport into a grid and then for each grid box check each unclustered marker to see if it's inside. Cluster boxes and their markers as they enter the viewport. Redo all the clusters if markers are added or removed.</li><li>Marker based: For each marker, figure out its grid box. Or ... (see next slide)</li></ul></li>
+                                        <ul>
+                                            <li>Grid-box based: Divide the viewport into a grid and then for each grid box check each unclustered marker to see if it's inside. Cluster boxes and their markers as they enter the viewport. Redo all the clusters if markers are added or removed.</li>
+                                            <li>Marker based: For each marker, figure out its grid box. Or ... (see next slide)</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                                 <br>
                             </section>
@@ -579,10 +583,10 @@
 
 
                         <li class="slide textbox">
+                            <header>
+                                <h2>Store markers in a hash</h2>
+                            </header>
                             <section>
-                                <header>
-                                    <h2>Store markers in a hash</h2>
-                                </header>
                                 <p> There may be accurate algorithms for getting a geohash (<a href="http://en.wikipedia.org/wiki/Geohash">http://en.wikipedia.org/wiki/Geohash</a>) since latitude and longitude are angles, but I wanted something simple so I just turned the latitude and longitude into a long binary number and truncated digits for granularity. Also, I developed my algorithm before geohash.org was announced.</p>
                                 <p data-height="460" data-theme-id="0" data-slug-hash="WbLQjQ" data-default-tab="js" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/WbLQjQ/'>WbLQjQ</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
                                 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -612,15 +616,15 @@
 
 
                         <li class="slide textbox">
+                            <header>
+                                <h2>Why MathWorks?</h2>
+                            </header>
                             <section>
-                                <header>
-                                    <h2>Why MathWorks?</h2>
-                                </header>
                                 <br>
                                 <ul>
                                     <li>I'm a Math major. I love Math.</li>
                                     <li>Specifically, I've been studying machine learning and looking for ways to apply it in my personal projects.</li>
-                                    <li>I love developing complex webapps and all the subtle UI design choices they force you to make.</li>
+                                    <li>I love developing complex web apps and all the subtle UI design choices they force you to make.</li>
                                 </ul>
                             </section>
                         </li>
@@ -628,14 +632,14 @@
 
 
                         <li class="slide textbox">
+                            <header>
+                                <h2>Why Marcus?</h2>
+                            </header>
                             <section>
-                                <header>
-                                    <h2>Why Marcus?</h2>
-                                </header>
                                 <br>
                                 <ul>
                                     <li>I've designed a complete, albeit simple, web app.</li>
-                                    <li>And a few incomplete ones on my own time ;)</li>
+                                    <li>And a few incomplete ones on my own time</li>
                                     <li>I'm sort of obsessive about UI.</li>
                                     <li>I love and am pretty good at approaching problems from a novel angle.</li>
                                     <li>But I don't mind a tried and true approach if it really is best.</li>
