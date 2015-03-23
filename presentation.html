@@ -145,7 +145,7 @@
                                 </ul>
                                 <h3>Education: UC Davis</h3>
                                 <ul>
-                                    <li>I majored in Math because it was my weakest subject. I struggled at first, but graduated high grades in all my classes.</li>
+                                    <li>I majored in Math because it was my weakest subject. I struggled at first, but graduated with high grades in all my classes.</li>
                                     <li>I played a lot with OpenBSD. I didn't really know what I was doing, but I loved the configuration over convention attitude. It's secure by default because everything is turned off and you have to turn it on and configure it if you want to use it.</li>
                                     <li>I even ran my own Sendmail server. I hated that its configuration file is so complex you have to run it through a compiler.</li>
                                 </ul>
@@ -193,8 +193,8 @@
                                     <li>I like writing software I use. This slideshow is an MMI Slideshow.</li>
                                     <li>Half the Internet is slideshows: Facebook, Twitter, Flickr, Instagram, every media website ...</li>
                                     <li>The other half is web apps with images that could probably be better managed.</li>
-                                    <li>HTML5 picture element really needs the help of front and/or back end scripting.</li>
-                                    <li>Since pictures are half the Internet (and also the other half), we can optimize a lot by using the picture element.</li>
+                                    <li>Act as a polyfill for HTML5 picture element behavior and think about the back end issues for generating it.</li>
+                                    <li>Since pictures are huge part of the Internet, we can optimize a lot by using the picture element to send the right size image to each screen resolution.</li>
                                 </ul>
                                 <h3>Front End</h3>
                                 <ul>
@@ -388,6 +388,7 @@
                                 <h3>JS - Pretty easy in comparison.</h3>
                                 <ul>
                                     <li>Trying to use reactive techniques to reflect state rather than storing it.</li>
+                                
                                 </ul>
                             </section>
                         </li>
@@ -406,21 +407,12 @@
                                     <li>Lazy loading: The panel loads after the rest of the page.</li>
                                     <li>Centralized: A loader file that's never cached points to the newest files that may be cached.</li>
                                     <li>Resizeable since maps are often sidebar elements of a story.</li>
-                                    <li>Newspapers exist because of reporters. This should be a tool that makes it easy for reporters to add to data. For example, if there's a fire, reporters can add value by layering real-time data on top of automated data like a weather KML layer from NOAA.</li>
+                                    <li>Newspapers exist because of reporters. This should be a tool that makes it easy for reporters to add to data. For example, if there's a fire, reporters can add value by layering story details on top of automated data like a weather KML layer from NOAA.</li>
                                 </ul>
                                 <h3>Influences</h3>
                                 <ul>
-                                    <li><b>TwitterVision</b>: A huge inspiration even if it was a failure. The web will become more real time.</li>
+                                    <li><b>TwitterVision</b>: An inspiration even if it isn't well known. The web will become more real time.</li>
                                     <li><b>Simile/Exhibit</b>: I learned about module loading by studying the Exhibit code around 2007. I also stated using non-standard HTML attributes to configure my maps after studying Exhibit code. I think the data-* idea was only being done by Dojo, at the time, and I followed jQuery and YUI more closely.</li>
-                                </ul>
-                                <h3>Aside: Simplicity is best.</h3>
-                                <ul>
-                                    <li>Google vs Yahoo vs Hotbot</li>
-                                    <li>Apple vs Microsoft</li>
-                                    <li>Facebook vs Myspace</li>
-                                    <li>Tindr vs Match/eHarmony/etc</li>
-                                    <li>Twitter vs LiveJournal</li>
-                                    <li>Craigslist</li>
                                 </ul>
                             </section>
                         </li>
@@ -436,7 +428,7 @@
 
                                 <br>
                                 <h3>Static, single page</h3>
-                                <h4>-Think of a stand alone site like everyblock.com or even Zillow.</h4>
+                                <h4>-Think of a stand alone site like everyblock.com or Zillow.</h4>
                                 <ul>
                                     <li>Good: Tried and true method for Google maps</li>
                                     <li>Bad: All that work for only one map!?</li>
@@ -494,8 +486,8 @@
                             <section>
                                 <br>
                                 <ul>
-                                    <li>Loading the right things at the right time.</li>
-                                    <li>Making sure CSS doesn't get trampled. Making sure my CSS doesn't trample anything else.</li>
+                                    <li>Loading the right things at the right time in the right order.</li>
+                                    <li>Making sure my CSS doesn't get trampled. Making sure my CSS doesn't trample anything else.</li>
                                     <li>Extensibility: An OCR Panel can create subpanels of diffent types and attached to different map buttons. Each subpanel can create a datatable extended from a base class. Markers of different types are attached to one marker manager instance.</li>
                                     <li>Too many markers. Clustering!</li>
                                 </ul>
@@ -625,6 +617,7 @@
                                     <li>I'm a Math major. I love Math.</li>
                                     <li>Specifically, I've been studying machine learning and looking for ways to apply it in my personal projects.</li>
                                     <li>I love developing complex web apps and all the subtle UI design choices they force you to make.</li>
+                                    <li>I think MathWorks will face interesting challenges adapting its products and their interfaces for the web.</li>
                                 </ul>
                             </section>
                         </li>
