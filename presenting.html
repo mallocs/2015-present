@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Presentation</title>
+
+    <link rel="stylesheet" href="src/mmi-slideshow.min.css" />
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 4.8rem;
+            font-family: Kalam, sans-serif;
+            font-weight: 400;
+        }
+        
+        h2 {
+            font-size: 3rem;
+            margin: 1rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+        
+        h4 {
+            margin: 0.5rem;
+        }
+        
+        dl {
+            font-size: 2rem;
+        }
+        
+        dt {
+            margin-bottom: 0.5rem;
+        }
+        
+        iframe {
+            border: none;
+        }
+        
+        .textbox ul {
+            list-style-type: disc;
+        }
+        
+        #container {
+            margin: 40px auto;
+            height: 100%;
+            max-width: 100%;
+        }
+        
+        .mmi-footer {
+            text-align: center;
+        }
+        
+        .main-carousel > .slide {
+            min-height: 700px;
+        }
+        
+        .slide.textbox,
+        .slide.otherbox {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: column wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .ocr-panel {
+            margin: 0 auto;
+        }
+        
+        .otherbox section {
+            margin: 20px auto;
+        }
+        
+        .textbox section,
+        .textbox header,
+        .otherbox header,
+        .otherbox p {
+            margin: 0 auto;
+        }
+        
+        .textbox > section,
+        .otherbox header,
+        .otherbox > section {
+            max-width: 85%;
+        }
+        
+        .codesection {
+            width: 80%;
+        }
+        #main-slideshow > div:nth-child(1) > .mmi-icon-previous,
+        #main-slideshow > div:nth-child(1) > .mmi-icon-next {
+            font-size: 2em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <section id="introduction">
+
+            <div id="demo">
+                <div id="main-slideshow" class="mmi-slideshow" data-width="100%" data-inside-navigation="true" data-transition="fade" data-buffer="0" data-pagination="numbers">
+                    <ul class="carousel main-carousel">
+
+
+
+
+
+
+                        <li class="slide textbox">
+                            <section>
+                                <header>
+                                    <h1>Marcus Ulrich</h1>
+                                </header>
+                                <h2>Projects</h2>
+                                <ul>
+                                    <li>MMI Slideshow</li>
+                                    <li>OCR Panel and ClusterManager</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>My Background</h2>
+                            </header>
+                            <section>
+                                <h3>Why am I a programmer?</h3>
+                                <ul>
+                                    <li>I like building things with language and imagining new processes and interfaces.</li>
+                                </ul>
+                                <h3>Education: UC Davis</h3>
+                                <ul>
+                                    <li>I majored in Math because it was my weakest subject. I struggled at first, but graduated with high grades in all my classes.</li>
+                                    <li>I played a lot with OpenBSD. I didn't really know what I was doing, but I loved the configuration over convention attitude. It's secure by default because everything is turned off and you have to turn it on and configure it if you want to use it.</li>
+                                    <li>I even ran my own Sendmail server. I hated that its configuration file is so complex you have to run it through a compiler.</li>
+                                </ul>
+                                <h3>Training: The Orange County Register</h3>
+                                <ul>
+                                    <li>I started out posting the newspaper stories to the web site.</li>
+                                    <li>I wrote a Python script to scrape the site and gather statistics, so I could better understand how the people with more experience placed stories and rewrote headlines.</li>
+                                    <li>Mashups were big at the time (chicagocrime.com), so I decided to put the data I was gathering on a Google Map. People liked it and eventually I was asked spend more time working on Google Maps.</li>
+                                    <li>I built the OCR Panel and ClusterManager to help manage our maps functionality.</li>
+                                    <li>Various smaller projects such as displaying election results and streamlining voting in the Best of Orange County contest.</li>
+                                </ul>
+                                <h3>Perspective: Spain and Euskadi (The Basque Country)</h3>
+                                <ul>
+                                    <li>I wanted to take a few years to do things completely differently.
+                                        <ul>
+                                            <li>Program in different languages: Objective C and Java</li>
+                                            <li>Speak in different languages and understand different cultures: Spanish, Basque, and French</li>
+                                            <li>Use a different world interface: Roundabouts, public transit (I'm a Californian), light switches you tap instead of flip and countless other little details.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Also I wanted to ride a motorcycle through the Alps.</li>
+                                </ul>
+                                <h3>Now</h3>
+                                <ul>
+                                    <li>Studying Machine Learning and a few other things with Coursera.</li>
+                                    <li>Writing MMI Slideshow so I have an easier way to manage my photos without giving them to Facebook/Flickr/Instagram/etc.</li>
+                                    <li>Various side projects.</li>
+                                </ul>
+                                <br>
+                            </section>
+                        </li>
+
+
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>MMI Slideshow - Goals</h2>
+                            </header>
+                            <section>
+                                <br>
+                                <h3>Why?</h3>
+                                <ul>
+                                    <li>I like writing software I use. This slideshow is an MMI Slideshow.</li>
+                                    <li>Half the Internet is slideshows: Facebook, Twitter, Flickr, Instagram, every media website ...</li>
+                                    <li>The other half is web apps with images that could probably be better managed.</li>
+                                    <li>Act as a polyfill for HTML5 picture element behavior and think about the back end issues for generating it.</li>
+                                    <li>Since pictures are huge part of the Internet, we can optimize a lot by using the picture element to send the right size image to each screen resolution.</li>
+                                </ul>
+                                <h3>Front End</h3>
+                                <ul>
+                                    <li>Configurable, lazy loading of all <del>images</del> content with an data-src attribute.</li>
+                                    <li>Optional thumbnails from a sprite. Thanks to HTTP/2, this might be a bad design decision in the future: <a href="http://http2-explained.readthedocs.org/en/latest/src/http2world.html">http://http2-explained.readthedocs.org/en/latest/src/http2world.html</a>
+                                    </li>
+                                    <li>Infinite image loading with JSON.</li>
+                                    <li>Usual JavaScript slideshow stuff:
+                                        <ul>
+                                            <li style="width: 600px;">Pagination, captions, credits, transitions, responsive, swipes and keyboard input, page numbering, play/pause button, show and hide navigation and captions ... and tests!</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h3>Back End</h3>
+                                <ul>
+                                    <li>Create slideshow automatically from a directory of images.</li>
+                                    <li>Create slideshow using the picture element automatically from a directory of images.</li>
+                                    <li>Load photos and photo meta-data from a photos.json file.</li>
+                                    <li>Create thumbnail sprite.png automatically.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+
+                        <li class="slide textbox">
+                            <section>
+                                <header>
+                                    <h2>MMI Slideshow - Design models</h2>
+                                </header>
+                                <br>
+                                <h3>Bootstrap Carousel</h3>
+                                <ul>
+                                    <li>Good: Nice separation of concerns.</li>
+                                    <li>Good: Somewhat of an industry standard.</li>
+                                    <li>Bad: Why do I have to put the navigation elements into the HTML!?</li>
+                                    <li>Bad: Navigation elements in HTML means it can't (easily) be changed from the script.</li>
+                                </ul>
+                                <h3>LA Times Slideshows</h3>
+                                <ul>
+                                    <li>Good: Works beautifully. Sends different images based on screen resolution.</li>
+                                    <li>Good: Probably extensively usability tested.</li>
+                                    <li>Bad: Doesn't seem to be open source.</li>
+                                    <li>Bad: Wow, that's some complicated HTML.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide otherbox">
+                            <section class="codesection">
+                                <h2>Bootstrap carousel code</h2>
+                                <h4>Everything is in the HTML so the JavaScript is just adding behavior and the CSS is just adding design.</h4>
+                                <p data-height="600" data-theme-id="0" data-slug-hash="PwXYVX" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/PwXYVX/'>PwXYVX</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
+                            </section>
+                        </li>
+
+
+
+
+                        <li class="slide otherbox">
+                            <section class="codesection">
+                                <h2>LA Times slideshow HTML</h2>
+                                <h4>Even more stuff in the HTML. Lots of repetition. Lots of extra bandwidth for each image that could be saved if it were calculated from JavaScript.</h4>
+                                <h4>But the img tag with data-baseurl is pretty nice. It gets the right image based on the screen size, and so it saves some bandwidth for small screens.</h4>
+                                <p data-height="600" data-theme-id="0" data-slug-hash="myabBx" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/myabBx/'>myabBx</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
+                            </section>
+                        </li>
+
+
+
+
+
+                        <li class="slide otherbox">
+                            <section class="codesection">
+                                <h2>MMI Slideshow code</h2>
+                                <p data-height="400" data-theme-id="0" data-slug-hash="zxyYEp" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/zxyYEp/'>zxyYEp</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
+                            </section>
+                        </li>
+
+
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>MMI Slideshow - Testing and Building</h2>
+                            </header>
+                            <section>
+                                <img style="width: 80%; margin-bottom: 20px;" data-src="img/grunt-testing.png" alt="Testing with Grunt">
+                                <br>
+                                <img style="width: 100%;" data-src="img/grunt-building.png" alt="Building with Grunt">
+                            </section>
+                        </li>
+
+
+
+
+                        <li class="slide otherbox">
+                            <header>
+                                <h2>MMI Slideshow - Examples</h2>
+                            </header>
+                            <section>
+
+                                <div style="margin-left: auto; margin-right: auto; height: 300px; width: 500px; margin-bottom: 80px;" class="mmi-slideshow" data-height="300px" data-width="500px" data-transition="fade">
+                                    <ul class="carousel">
+                                        <li class="slide">
+                                            <img src="http://placehold.it/500x300/e87000/000" data-caption="First picture" data-credit="mmi">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://placehold.it/500x300/003807/000" data-caption="Second picture" data-credit="mmi">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://placehold.it/500x300/006ce8/000" data-caption="Third picture" data-credit="mmi">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://placehold.it/500x300/006c18/000" data-caption="Fourth picture" data-credit="mmi">
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="mmi-slideshow" data-pagination="sprite" data-sprite="http://old.mallocs.net/img/20130504-euskadiko-berde/sprite.jpg" data-transition="fade" data-loop="true" data-width="666px">
+                                    <ul class="carousel">
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/01.jpg" data-caption="Nafarroa! The journey begins.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/02.jpg" data-caption="Tanatorioa (the mortuary) next to the church. Convenient.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/03.jpg" data-caption="Bar Ameztia in Santesteban. Chicken with mushrooms and roquefort bocadillo for 4.50€.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/04.jpg" data-caption="Hillsides dotted with wool. ">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/05.jpg" data-caption="The Marauder actually makes a pretty fun dirt bike too!">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/06.jpg" data-caption="Two hours on this road and I didn't pass anyone but villagers.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/07.jpg" data-caption="I passed more waterfalls than people. ">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/08.jpg" data-caption="I passed a lot more waterfalls than people. ">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/09.jpg" data-caption="NA-4453 between Oronoz-Mugaire and Landibar.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/10.jpg" data-caption="This is a tree. Seriously. This is what it looked like. Blinding!">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/11.jpg" data-caption="Help! I'm trapped in a Grant Wood painting, but all the houses look funny.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/12.jpg" data-caption="Help! I'm trapped in a Grant Wood painting, but all the houses look funny.">
+                                        </li>
+                                        <li class="slide">
+                                            <img data-src="http://old.mallocs.net/img/20130504-euskadiko-berde/680x500/13.jpg" data-caption="I admit. I often add saturation to my photos, but this is 100% pure Basque country green.">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>MMI Slideshow - Challenges</h2>
+                            </header>
+                            <section>
+                                <br>
+                                <h3>CSS</h3>
+                                <ul>
+                                    <li>Trying to figure out how browsers (are supposed to) calculate an element's height. There's 10 cases: <a href="http://www.w3.org/TR/CSS2/visudet.html#the-height-property">W3C Height Spec</a>
+                                    </li>
+                                    <li>Transitions for modern browsers. Javascript for older ones.</li>
+                                    <li>Use class names. Never ids (for a widget).</li>
+                                    <li>Child selector is safer than descendant selector.</li>
+                                    <li>Pseudo namespaces</li>
+                                </ul>
+                                <h3>JS - Pretty easy in comparison.</h3>
+                                <ul>
+                                    <li>Trying to use reactive techniques to reflect state rather than storing it.</li>
+                                
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>OCR Panel and ClusterManager</h2>
+                            </header>
+                            <section>
+                                <br>
+                                <h3>Goals</h3>
+                                <ul>
+                                    <li>Fast and easy for reporters to create.</li>
+                                    <li>Lazy loading: The panel loads after the rest of the page.</li>
+                                    <li>Centralized: A loader file that's never cached points to the newest files that may be cached.</li>
+                                    <li>Resizeable since maps are often sidebar elements of a story.</li>
+                                    <li>Newspapers exist because of reporters. This should be a tool that makes it easy for reporters to add to data. For example, if there's a fire, reporters can add value by layering story details on top of automated data like a weather KML layer from NOAA.</li>
+                                </ul>
+                                <h3>Influences</h3>
+                                <ul>
+                                    <li><b>TwitterVision</b>: An inspiration even if it isn't well known. The web will become more real time.</li>
+                                    <li><b>Simile/Exhibit</b>: I learned about module loading by studying the Exhibit code around 2007. I also stated using non-standard HTML attributes to configure my maps after studying Exhibit code. I think the data-* idea was only being done by Dojo, at the time, and I followed jQuery and YUI more closely.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>OCR Panel Design Options</h2>
+                            </header>
+                            <section>
+
+                                <br>
+                                <h3>Static, single page</h3>
+                                <h4>-Think of a stand alone site like everyblock.com or Zillow.</h4>
+                                <ul>
+                                    <li>Good: Tried and true method for Google maps</li>
+                                    <li>Bad: All that work for only one map!?</li>
+                                    <li>Bad: If the data is that valuable by itself, then Google, Zillow, or someone else will do it too.</li>
+                                </ul>
+                                <br>
+                                <h3>A widget</h3>
+                                <h4>-Instead of a map, this is a configurable container. A reporter can make a layer that can be put on top of any of our other map data.</h4>
+                                <ul>
+                                    <li>Good: Reporters will help me make thousands of maps!</li>
+                                    <li>Good: Highlights the data that reporters generate.</li>
+                                    <li>Bad: No one (that I could find) had done this.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>OCR Panel - System</h2>
+                            </header>
+                            <section>
+                                <br>
+                                <img style="width: 100%;" data-src="img/ocrpanel.png" alt="OCR Panel">
+                                <h4>Example Configuration div</h4>
+                                <p data-height="300" data-theme-id="0" data-slug-hash="vEvLyO" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/vEvLyO/'>vEvLyO</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide otherbox">
+                            <header>
+                                <h2>OCR Panel Example</h2>
+                            </header>
+                            <section>
+                                <div id="ocr-resize-panel1" class="ocr-panel" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.62148091503237, -117.78030395507812" zoomLevel="10" content="map/normal" footer_message="A simple example" layers='[{src: "http://www.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=112238113762835356772.00045fea7f54095a3ab1f&output=nl", text: "Bank Robberies"}]' src="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=nl&msid=108703241669937569803.0004771691b7c7bcb4ded" style="width:600px; height: 600px;">
+                                    <div style="padding:200px 0px 200px 0px; background-color:#E5E3DF;">
+                                        <center>Loading...
+                                            <img src="img/loading-circle-ball-transparent.gif">
+                                        </center>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>OCR Panel - Challenges</h2>
+                            </header>
+                            <section>
+                                <br>
+                                <ul>
+                                    <li>Loading the right things at the right time in the right order.</li>
+                                    <li>Making sure my CSS doesn't get trampled. Making sure my CSS doesn't trample anything else.</li>
+                                    <li>Extensibility: An OCR Panel can create subpanels of diffent types and attached to different map buttons. Each subpanel can create a datatable extended from a base class. Markers of different types are attached to one marker manager instance.</li>
+                                    <li>Too many markers. Clustering!</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>ClusterManager Design Options</h2>
+                            </header>
+                            <section>
+                                <br>
+                                <ul>
+                                    <li>Explicitly clustering: K-means, distance.</li>
+                                    <li>Image-mapped images</li>
+                                    <li>Grid-based clustering</li>
+                                    <li>Store markers in a hash.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>Distance-based clustering</h2>
+                            </header>
+                            <section>
+                                <p>For each marker you look at each cluster to see how far it is from the center of the cluster. If the distance is less than a maximum (user specified) distance and the cluster is the closest, then that marker is added to the cluster. If the marker fails to be added to any cluster then a new cluster is created containing that marker.</p>
+                                <p><i>Image and text from <a href="https://developers.google.com/maps/articles/toomanymarkers">https://developers.google.com/maps/articles/toomanymarkers</a></i>
+                                </p>
+                                <img data-src="img/distancewithoverlay.png">
+                                <ul>
+                                    <li>Good: Very accurate.</li>
+                                    <li>Bad: Not fast. O(n^2) if you compare every point to every other point.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>Image-mapped images</h2>
+                            </header>
+                            <section>
+                                <p>Basically, not clustering. Take the image below, overlay it on the map, and map out regions to click event handlers.</p>
+                                <p>Example tile overlay:</p>
+                                <img data-src="img/imagemapcluster.png">
+                                <ul>
+                                    <li>Good: This is what Google does!</li>
+                                    <li>Great: O(1), at least on the front end.</li>
+                                    <li>Bad: Requires a dedicated image server and an algorithm that can take arbitrary data and turn it into images and image maps.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>Grid-based clustering</h2>
+                            </header>
+                            <section>
+                                <p>Grid-based clustering works by dividing the map into squares of a certain size (the size changes at each zoom) and then grouping the markers into each grid square.</p>
+                                <p>This technique can be rather quick because it only requires iterating through the markers once to see if its position is between a set of coordinates; no complicated distance calculation is needed. It does have some limitations, as you can see marker's 7 and 8 are close together but because they are in separate grids they are not clustered together.</p>
+                                <p><i>Image and text from <a href="https://developers.google.com/maps/articles/toomanymarkers">https://developers.google.com/maps/articles/toomanymarkers</a></i>
+                                </p>
+                                <img data-src="img/gridclustering.png">
+                                <ul>
+                                    <li>Good: Pretty fast. O(n)</li>
+                                    <li>Bad: Not very accurate. Really just de-cluttering.</li>
+                                    <li>Bad: I couldn't figure out a <b>simple</b> way to set up the grid.
+                                        <ul>
+                                            <li>Grid-box based: Divide the viewport into a grid and then for each grid box check each unclustered marker to see if it's inside. Cluster boxes and their markers as they enter the viewport. Redo all the clusters if markers are added or removed.</li>
+                                            <li>Marker based: For each marker, figure out its grid box. Or ... (see next slide)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <br>
+                            </section>
+                        </li>
+
+
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>Store markers in a hash</h2>
+                            </header>
+                            <section>
+                                <p> There may be accurate algorithms for getting a geohash (<a href="http://en.wikipedia.org/wiki/Geohash">http://en.wikipedia.org/wiki/Geohash</a>) since latitude and longitude are angles, but I wanted something simple so I just turned the latitude and longitude into a long binary number and truncated digits for granularity. Also, I developed my algorithm before geohash.org was announced.</p>
+                                <p data-height="460" data-theme-id="0" data-slug-hash="WbLQjQ" data-default-tab="js" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/WbLQjQ/'>WbLQjQ</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                                <br>
+                                <p>To test it, I wrote a boxToPolygon function. I could then take a marker fixture, get its geohash, get the region for the geohash, put both on a map and make sure the marker was inside the region. Doing this made me realize how common edge cases were (markers near the grid border), so I updated the clusterer to do optional distance-based clustering with neighboring boxes.</p>
+                                <ul>
+                                    <li>Good: Pretty fast. O(n).</li>
+                                    <li>Good: Simple</li>
+                                    <li>Good: Easy to invert to get a region from a geohash.</li>
+                                    <li>Bad: Not very accurate. Really just de-cluttering.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide otherbox">
+                            <header>
+                                <h2>How does ClusterManager compare?</h2>
+                            </header>
+                            <br>
+                            <section>
+                                <iframe id="speed-test-slide" data-src="http://mallocs.github.io/ClusterManager/demos/speed_test.html" height="720" width="1000"></iframe>
+                            </section>
+                        </li>
+
+
+
+
+
+                        <li class="slide textbox">
+                            <header>
+                                <h2>Why Marcus?</h2>
+                            </header>
+                            <section>
+                                <br>
+                                <ul>
+                                    <li>I've designed a complete, albeit simple, web app.</li>
+                                    <li>And a few incomplete ones on my own time</li>
+                                    <li>I'm sort of obsessive about UI.</li>
+                                    <li>I love and am pretty good at approaching problems from a novel angle.</li>
+                                    <li>But I don't mind a tried and true approach if it really is best.</li>
+                                    <li>I eat my own dog food.</li>
+                                    <li>I'm not afraid to fail,</li>
+                                    <li>but I am afraid of not finishing.</li>
+                                </ul>
+                            </section>
+                        </li>
+
+
+
+                        <li class="slide otherbox">
+                            <header>
+                                <h2>100 Cups of Coffee in 2 Days</h2>
+                            </header>
+                            <p style="max-width:80%;">I tried to go to 100 different coffee places around Orange County in 2 days and drink 1 cup of coffee at each of them and put it all one of my maps in real time. I failed to drink all the coffee, but I learned how to push my web app even further by using it to do live reporting.</p>
+                            <section>
+
+                                <br>
+                                <div id="ocr-resize-panel2" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.67635422308637, -117.82424926757812" zoomLevel="10" content="map/normal" footer_message="mmm, coffee..." layers='[{src: "http://maps.google.com/maps/ms?hl=en&amp;ie=UTF8&amp;msa=0&amp;output=nl&amp;msid=107338960139840116168.000464e4c219950a59f03", text: "Day 1"}, {src: "http://maps.google.com/maps/ms?hl=en&amp;ie=UTF8&amp;msa=0&amp;output=nl&amp;msid=107338960139840116168.000464e4c4b7700ead286", text: "Day 2"}]' class="ocr-panel" style="width:600px; height: 600px;">
+                                    <div style="padding:200px 0px 200px 0px; background-color:#E5E3DF;">
+                                        <center>Loading...
+                                            <img src="img/loading-circle-ball-transparent.gif" style="display: block;">
+                                        </center>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="src/mmi-slideshow.bundle.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+    <script id="ocr-resize-panel-script" type="text/javascript" src="src/ocr-panel-loader.js?v=1"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var ss = $(".mmi-slideshow").slideshow();
+        });
+    </script>
+
+
+</body>
+
+</html
