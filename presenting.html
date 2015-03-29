@@ -89,6 +89,7 @@
             margin: 0 auto;
         }
         
+        .otherbox > p,
         .textbox > section,
         .otherbox header,
         .otherbox > section {
@@ -98,6 +99,7 @@
         .codesection {
             width: 80%;
         }
+        
         #main-slideshow > div:nth-child(1) > .mmi-icon-previous,
         #main-slideshow > div:nth-child(1) > .mmi-icon-next {
             font-size: 2em;
@@ -392,7 +394,7 @@
                                 <h3>JS - Pretty easy in comparison.</h3>
                                 <ul>
                                     <li>Trying to use reactive techniques to reflect state rather than storing it.</li>
-                                
+
                                 </ul>
                             </section>
                         </li>
@@ -470,8 +472,10 @@
                             <header>
                                 <h2>OCR Panel Example</h2>
                             </header>
+
+                            <p>This is a re-creation using Google Maps API V3. The original was built with Google Maps API V2 and integrated custom traffic, restaurant inspection, and real estate data in addition to the crime data. Each panel also had an associated datatable that could be shown or hidden.</p>
                             <section>
-                                <div id="ocr-resize-panel1" class="ocr-panel" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.62148091503237, -117.78030395507812" zoomLevel="10" content="map/normal" footer_message="A simple example" layers='[{src: "http://www.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=112238113762835356772.00045fea7f54095a3ab1f&output=nl", text: "Bank Robberies"}]' src="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=nl&msid=108703241669937569803.0004771691b7c7bcb4ded" style="width:600px; height: 600px;">
+                                <div id="ocr-resize-panel1" class="ocr-panel" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.62148091503237, -117.78030395507812" zoomLevel="10" content="map/normal" footer_message="A simple example" layers='[{src: "http://www.wrh.noaa.gov/sgx/data/kml/rwrsgx_temp.kml", text: "Current temperatures (Source: NOAA)"}, {src: "http://www.wrh.noaa.gov/sgx/data/kml/1day.kml", text: "One-day precipitation totals (Source: NOAA)"}]' src="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=nl&msid=108703241669937569803.0004771691b7c7bcb4ded" style="width:600px; height: 600px;">
                                     <div style="padding:200px 0px 200px 0px; background-color:#E5E3DF;">
                                         <center>Loading...
                                             <img src="img/loading-circle-ball-transparent.gif">

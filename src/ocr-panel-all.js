@@ -2156,7 +2156,7 @@ YAHOO.extend(OCRPanel, Panel, {
         },
 
         configSRC: function(type, args /*, obj*/) {
-              var geoSrc = this.geoSrc = new google.maps.KmlLayer(args[0]);
+              var geoSrc = this.geoSrc = new google.maps.KmlLayer({url: args[0], preserveViewport: true});
               geoSrc.setMap(this.map);
         },
 
@@ -2186,10 +2186,10 @@ YAHOO.extend(OCRPanel, Panel, {
 
             this.loadingCount = 0;
 
-              var geoSrc = this.geoSrc = new google.maps.KmlLayer(args[0]);
+            var geoSrc = this.geoSrc = new google.maps.KmlLayer(args[0]);
               geoSrc.setMap(this.map);
             function createLayerCheckbox(opts) {
-                var geoSrc = new google.maps.KmlLayer(opts.src),
+                var geoSrc = new google.maps.KmlLayer({url: opts.src, preserveViewport: true, map: this.map}),
                     el     = document.createElement("span"),
                     span   = document.createElement("span"),
                     input  = document.createElement("input"),
@@ -2255,7 +2255,7 @@ YAHOO.extend(OCRPanel, Panel, {
             }
             for(var i=0,layer; layer=layers[i]; i++) {
                 if(layer.nocheckbox) {
-                    geoSrc = new google.maps.KmlLayer(layer.src);
+                    geoSrc = new google.maps.KmlLayer({url: layer.src, preserveViewport: true});
                     height -= 20;
                 } else {
                     layer = createLayerCheckbox(layer);
