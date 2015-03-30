@@ -149,19 +149,18 @@
                                 <ul>
                                     <li>I like building things with language and imagining new processes and interfaces.</li>
                                 </ul>
-                                <h3>Education: UC Davis</h3>
+                                <h3>Education: UC Davis and San Jose State University</h3>
                                 <ul>
-                                    <li>I majored in Math because it was my weakest subject. I struggled at first, but graduated with high grades in all my classes.</li>
-                                    <li>I played a lot with OpenBSD. I didn't really know what I was doing, but I loved the configuration over convention attitude. It's secure by default because everything is turned off and you have to turn it on and configure it if you want to use it.</li>
-                                    <li>I even ran my own Sendmail server. I hated that its configuration file is so complex you have to run it through a compiler.</li>
+                                    <li>At San Jose State, I studied Economics and Journalism and won a <a href="http://cspa.columbia.edu/recepient-lists/1999-awards-student-work-gold-circle-awards-collegiate-recipients#NEWS">national award</a> from Columbia University for my news writing.</li>
+                                    <li>At UC Davis, I majored in Math because it was my weakest subject. I struggled at first, but graduated with high grades in all my classes. I received a B.S. in Math with minors in Computer Science and Economics.</li>
                                 </ul>
                                 <h3>Training: The Orange County Register</h3>
                                 <ul>
                                     <li>I started out posting the newspaper stories to the web site.</li>
-                                    <li>I wrote a Python script to scrape the site and gather statistics, so I could better understand how the people with more experience placed stories and rewrote headlines.</li>
-                                    <li>Mashups were big at the time (chicagocrime.com), so I decided to put the data I was gathering on a Google Map. People liked it and eventually I was asked spend more time working on Google Maps.</li>
-                                    <li>I built the OCR Panel and ClusterManager to help manage our maps functionality.</li>
-                                    <li>Various smaller projects such as displaying election results and streamlining voting in the Best of Orange County contest.</li>
+                                    <li>I wrote a Python script to scrape the site and gather statistics so I could better understand how the people with more experience placed stories and rewrote headlines.</li>
+                                    <li>Mashups were big at the time (chicagocrime.com, etc), so I decided to put the data I was gathering on a Google Map. People liked it and eventually I was asked to spend more time working on Google Maps.</li>
+                                    <li>I built the (Orange County Register) OCR Panel and ClusterManager to help manage our maps functionality.</li>
+                                    <li>I also worked on various smaller projects such as displaying election results and streamlining voting in the Best of Orange County contest.</li>
                                 </ul>
                                 <h3>Perspective: Spain and Euskadi (The Basque Country)</h3>
                                 <ul>
@@ -200,11 +199,10 @@
                                     <li>Half the Internet is slideshows: Facebook, Twitter, Flickr, Instagram, every media website ...</li>
                                     <li>The other half is web apps with images that could probably be better managed.</li>
                                     <li>Act as a polyfill for HTML5 picture element behavior and think about the back end issues for generating it.</li>
-                                    <li>Since pictures are huge part of the Internet, we can optimize a lot by using the picture element to send the right size image to each screen resolution.</li>
                                 </ul>
                                 <h3>Front End</h3>
                                 <ul>
-                                    <li>Configurable, lazy loading of all <del>images</del> content with an data-src attribute.</li>
+                                    <li>Configurable, lazy loading of all <del>images</del> content with a data-src attribute.</li>
                                     <li>Optional thumbnails from a sprite. Thanks to HTTP/2, this might be a bad design decision in the future: <a href="http://http2-explained.readthedocs.org/en/latest/src/http2world.html">http://http2-explained.readthedocs.org/en/latest/src/http2world.html</a>
                                     </li>
                                     <li>Infinite image loading with JSON.</li>
@@ -217,7 +215,6 @@
                                 <h3>Back End</h3>
                                 <ul>
                                     <li>Create slideshow automatically from a directory of images.</li>
-                                    <li>Create slideshow using the picture element automatically from a directory of images.</li>
                                     <li>Load photos and photo meta-data from a photos.json file.</li>
                                     <li>Create thumbnail sprite.png automatically.</li>
                                 </ul>
@@ -225,66 +222,7 @@
                         </li>
 
 
-
-
-                        <li class="slide textbox">
-                            <section>
-                                <header>
-                                    <h2>MMI Slideshow - Design models</h2>
-                                </header>
-                                <br>
-                                <h3>Bootstrap Carousel</h3>
-                                <ul>
-                                    <li>Good: Nice separation of concerns.</li>
-                                    <li>Good: Somewhat of an industry standard.</li>
-                                    <li>Bad: Why do I have to put the navigation elements into the HTML!?</li>
-                                    <li>Bad: Navigation elements in HTML means it can't (easily) be changed from the script.</li>
-                                </ul>
-                                <h3>LA Times Slideshows</h3>
-                                <ul>
-                                    <li>Good: Works beautifully. Sends different images based on screen resolution.</li>
-                                    <li>Good: Probably extensively usability tested.</li>
-                                    <li>Bad: Doesn't seem to be open source.</li>
-                                    <li>Bad: Wow, that's some complicated HTML.</li>
-                                </ul>
-                            </section>
-                        </li>
-
-
-
-                        <li class="slide otherbox">
-                            <section class="codesection">
-                                <h2>Bootstrap carousel code</h2>
-                                <h4>Everything is in the HTML so the JavaScript is just adding behavior and the CSS is just adding design.</h4>
-                                <p data-height="600" data-theme-id="0" data-slug-hash="PwXYVX" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/PwXYVX/'>PwXYVX</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
-                            </section>
-                        </li>
-
-
-
-
-                        <li class="slide otherbox">
-                            <section class="codesection">
-                                <h2>LA Times slideshow HTML</h2>
-                                <h4>Even more stuff in the HTML. Lots of repetition. Lots of extra bandwidth for each image that could be saved if it were calculated from JavaScript.</h4>
-                                <h4>But the img tag with data-baseurl is pretty nice. It gets the right image based on the screen size, and so it saves some bandwidth for small screens.</h4>
-                                <p data-height="600" data-theme-id="0" data-slug-hash="myabBx" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/myabBx/'>myabBx</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
-                            </section>
-                        </li>
-
-
-
-
-
-                        <li class="slide otherbox">
-                            <section class="codesection">
-                                <h2>MMI Slideshow code</h2>
-                                <p data-height="400" data-theme-id="0" data-slug-hash="zxyYEp" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/zxyYEp/'>zxyYEp</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
-                            </section>
-                        </li>
+                        
 
 
 
@@ -292,16 +230,21 @@
 
                         <li class="slide textbox">
                             <header>
-                                <h2>MMI Slideshow - Testing and Building</h2>
+                                <h2>MMI Slideshow - Testing, Building, and Code</h2>
                             </header>
                             <section>
                                 <img style="width: 80%; margin-bottom: 20px;" data-src="img/grunt-testing.png" alt="Testing with Grunt">
                                 <br>
                                 <img style="width: 100%;" data-src="img/grunt-building.png" alt="Building with Grunt">
+                                <br>
+                                <h4>Example Configuration HTML</h4>
+                                <p data-height="400" data-theme-id="0" data-slug-hash="zxyYEp" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/zxyYEp/'>zxyYEp</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                                <script async data-src="//assets.codepen.io/assets/embed/ei.js"></script>
                             </section>
                         </li>
-
-
+                        
+                        
+                        
 
 
                         <li class="slide otherbox">
@@ -373,31 +316,10 @@
                                 </div>
                             </section>
                         </li>
+                        
+                        
 
 
-
-                        <li class="slide textbox">
-                            <header>
-                                <h2>MMI Slideshow - Challenges</h2>
-                            </header>
-                            <section>
-                                <br>
-                                <h3>CSS</h3>
-                                <ul>
-                                    <li>Trying to figure out how browsers (are supposed to) calculate an element's height. There's 10 cases: <a href="http://www.w3.org/TR/CSS2/visudet.html#the-height-property">W3C Height Spec</a>
-                                    </li>
-                                    <li>Transitions for modern browsers. Javascript for older ones.</li>
-                                    <li>Use class names. Never ids (for a widget).</li>
-                                    <li>Child selector is safer than descendant selector.</li>
-                                    <li>Pseudo namespaces</li>
-                                </ul>
-                                <h3>JS - Pretty easy in comparison.</h3>
-                                <ul>
-                                    <li>Trying to use reactive techniques to reflect state rather than storing it.</li>
-
-                                </ul>
-                            </section>
-                        </li>
 
 
 
@@ -415,41 +337,9 @@
                                     <li>Resizeable since maps are often sidebar elements of a story.</li>
                                     <li>Newspapers exist because of reporters. This should be a tool that makes it easy for reporters to add to data. For example, if there's a fire, reporters can add value by layering story details on top of automated data like a weather KML layer from NOAA.</li>
                                 </ul>
-                                <h3>Influences</h3>
-                                <ul>
-                                    <li><b>TwitterVision</b>: An inspiration even if it isn't well known. The web will become more real time.</li>
-                                    <li><b>Simile/Exhibit</b>: I learned about module loading by studying the Exhibit code around 2007. I also stated using non-standard HTML attributes to configure my maps after studying Exhibit code. I think the data-* idea was only being done by Dojo, at the time, and I followed jQuery and YUI more closely.</li>
-                                </ul>
                             </section>
                         </li>
 
-
-
-
-                        <li class="slide textbox">
-                            <header>
-                                <h2>OCR Panel Design Options</h2>
-                            </header>
-                            <section>
-
-                                <br>
-                                <h3>Static, single page</h3>
-                                <h4>-Think of a stand alone site like everyblock.com or Zillow.</h4>
-                                <ul>
-                                    <li>Good: Tried and true method for Google maps</li>
-                                    <li>Bad: All that work for only one map!?</li>
-                                    <li>Bad: If the data is that valuable by itself, then Google, Zillow, or someone else will do it too.</li>
-                                </ul>
-                                <br>
-                                <h3>A widget</h3>
-                                <h4>-Instead of a map, this is a configurable container. A reporter can make a layer that can be put on top of any of our other map data.</h4>
-                                <ul>
-                                    <li>Good: Reporters will help me make thousands of maps!</li>
-                                    <li>Good: Highlights the data that reporters generate.</li>
-                                    <li>Bad: No one (that I could find) had done this.</li>
-                                </ul>
-                            </section>
-                        </li>
 
 
 
@@ -460,7 +350,7 @@
                             <section>
                                 <br>
                                 <img style="width: 100%;" data-src="img/ocrpanel.png" alt="OCR Panel">
-                                <h4>Example Configuration div</h4>
+                                <h4>Example Configuration HTML</h4>
                                 <p data-height="300" data-theme-id="0" data-slug-hash="vEvLyO" data-default-tab="html" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/vEvLyO/'>vEvLyO</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
                                 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
                             </section>
@@ -474,6 +364,7 @@
                             </header>
 
                             <p>This is a re-creation using Google Maps API V3. The original was built with Google Maps API V2 and integrated custom traffic, restaurant inspection, and real estate data in addition to the crime data. Each panel also had an associated datatable that could be shown or hidden.</p>
+                            <p>Use the "More..." button to see crime markers.</p>
                             <section>
                                 <div id="ocr-resize-panel1" class="ocr-panel" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.62148091503237, -117.78030395507812" zoomLevel="10" content="map/normal" footer_message="A simple example" layers='[{src: "http://www.wrh.noaa.gov/sgx/data/kml/rwrsgx_temp.kml", text: "Current temperatures (Source: NOAA)"}, {src: "http://www.wrh.noaa.gov/sgx/data/kml/1day.kml", text: "One-day precipitation totals (Source: NOAA)"}]' src="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=nl&msid=108703241669937569803.0004771691b7c7bcb4ded" style="width:600px; height: 600px;">
                                     <div style="padding:200px 0px 200px 0px; background-color:#E5E3DF;">
@@ -519,7 +410,9 @@
                             </section>
                         </li>
 
+                        
 
+                        
                         <li class="slide textbox">
                             <header>
                                 <h2>Distance-based clustering</h2>
@@ -536,6 +429,8 @@
                             </section>
                         </li>
 
+                        
+                        
 
 
                         <li class="slide textbox">
@@ -603,6 +498,22 @@
 
 
 
+                        
+                        
+                        <li class="slide otherbox">
+                            <header>
+                                <h2>ClusterManager Example</h2>
+                            </header>
+                            <br>
+                            <section>
+                                <iframe id="clustermanager-slide" data-src="http://mallocs.github.io/ClusterManager/demos/functions.html" height="720" width="1000"></iframe>
+                            </section>
+                        </li>
+                        
+                        
+                        
+                        
+                        
                         <li class="slide otherbox">
                             <header>
                                 <h2>How does ClusterManager compare?</h2>
@@ -646,7 +557,7 @@
                             <section>
 
                                 <br>
-                                <div id="ocr-resize-panel2" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.67635422308637, -117.82424926757812" zoomLevel="10" content="map/normal" footer_message="mmm, coffee..." layers='[{src: "http://maps.google.com/maps/ms?hl=en&amp;ie=UTF8&amp;msa=0&amp;output=nl&amp;msid=107338960139840116168.000464e4c219950a59f03", text: "Day 1"}, {src: "http://maps.google.com/maps/ms?hl=en&amp;ie=UTF8&amp;msa=0&amp;output=nl&amp;msid=107338960139840116168.000464e4c4b7700ead286", text: "Day 2"}]' class="ocr-panel" style="width:600px; height: 600px;">
+                                <div id="ocr-resize-panel2" type="application/vnd.google-earth.kml+xml" rel="panel/data" width="600px" height="600px" crime="false" center="33.67635422308637, -117.82424926757812" zoomLevel="10" content="map/normal" footer_message="mmm, coffee..." layers='[{src: "http://maps.google.com/maps/ms?hl=en&amp;ie=UTF8&amp;msa=0&amp;output=nl&amp;msid=107338960139840116168.000464e4c219950a59f03", text: "Day 1", on: true}, {src: "http://maps.google.com/maps/ms?hl=en&amp;ie=UTF8&amp;msa=0&amp;output=nl&amp;msid=107338960139840116168.000464e4c4b7700ead286", text: "Day 2", on: true}]' class="ocr-panel" style="width:600px; height: 600px;">
                                     <div style="padding:200px 0px 200px 0px; background-color:#E5E3DF;">
                                         <center>Loading...
                                             <img src="img/loading-circle-ball-transparent.gif" style="display: block;">
@@ -677,4 +588,4 @@
 
 </body>
 
-</html
+</html>

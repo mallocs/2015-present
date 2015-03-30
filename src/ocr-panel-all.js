@@ -2205,7 +2205,7 @@ YAHOO.extend(OCRPanel, Panel, {
                              });
                 */
                 if(opts.on) { 
-                    geoSrc.setMap(this.map);
+                    geoSrc.setMap(me.map);
               //      me.map.addOverlay(geoXml);
                 }
                 span.innerHTML = opts.text + "<br>";
