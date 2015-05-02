@@ -2016,7 +2016,8 @@ YAHOO.extend(OCRPanel, Panel, {
             if(crimeInput && crimeInput !== "false") {
                 var contextWidth = parseInt(this.userConfig.width);
                 var panelWidth = (contextWidth >= 480 && contextWidth <= 700) ? contextWidth+"px":"500px";
-                var panel = this.crimeControl.buildPanel(this.crimeControl,  {"context": [this.id + "_c", "tl", "bl", [], [0, 0]]});
+                console.log(this.id + "_c");
+                var panel = this.crimeControl.buildPanel(this.crimeControl,  {"context": [this.id + "_c", "tl", "tr", [0, 0]]});
                 panel.cfg.setProperty("width", panelWidth);
                 panel.element.style.visibility = "visible";
                 this.crimeControl.checkbox.checked = true;
@@ -2735,7 +2736,7 @@ CrimeControl.prototype.buildPanel = function(me) {
     mainDiv.appendChild(calendarEl);
 
     var header = "Crime",
-        panel = createPanel({body:mainDiv, header:header, width:"500px", height:"350px", log:"crime", context: ["ocr-resize-panel1", "tl", "tl"]});
+        panel = createPanel({body:mainDiv, header:header, width:"500px", height:"350px", log:"crime", context: ["ocr-resize-panel1_c", "tr", "tl"]});
 
     function handleSelect(type, args /*, obj*/) { 
         var dates = args[0]; 

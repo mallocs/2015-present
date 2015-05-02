@@ -72,6 +72,8 @@
             -webkit-flex-flow: column wrap;
             flex-direction: column;
             justify-content: center;
+            -webkit-justify-content: center;
+
         }
         
         .ocr-panel {
@@ -87,6 +89,9 @@
         .otherbox header,
         .otherbox p {
             margin: 0 auto;
+            flex: 0 1 auto;
+            align-self: center;
+            min-height: auto;
         }
         
         .otherbox > p,
@@ -482,7 +487,7 @@
                                 <h2>Store markers in a hash</h2>
                             </header>
                             <section>
-                                <p> There may be accurate algorithms for getting a geohash (<a href="http://en.wikipedia.org/wiki/Geohash">http://en.wikipedia.org/wiki/Geohash</a>) since latitude and longitude are angles, but I wanted something simple so I just turned the latitude and longitude into a long binary number and truncated digits for granularity. Also, I developed my algorithm before geohash.org was announced.</p>
+                                <p> There may be more accurate algorithms for getting a geohash (<a href="http://en.wikipedia.org/wiki/Geohash">http://en.wikipedia.org/wiki/Geohash</a>) since latitude and longitude are angles, but I wanted something simple so I just turned the latitude and longitude into a long binary number and truncated digits for granularity. Also, I developed my algorithm before geohash.org was announced.</p>
                                 <p data-height="460" data-theme-id="0" data-slug-hash="WbLQjQ" data-default-tab="js" data-user="mallocs" class='codepen'>See the Pen <a href='http://codepen.io/mallocs/pen/WbLQjQ/'>WbLQjQ</a> by Marcus Ulrich (<a href='http://codepen.io/mallocs'>@mallocs</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
                                 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
                                 <br>
