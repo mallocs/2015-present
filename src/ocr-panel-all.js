@@ -2016,7 +2016,6 @@ YAHOO.extend(OCRPanel, Panel, {
             if(crimeInput && crimeInput !== "false") {
                 var contextWidth = parseInt(this.userConfig.width);
                 var panelWidth = (contextWidth >= 480 && contextWidth <= 700) ? contextWidth+"px":"500px";
-                console.log(this.id + "_c");
                 var panel = this.crimeControl.buildPanel(this.crimeControl,  {"context": [this.id + "_c", "tl", "tr", [0, 0]]});
                 panel.cfg.setProperty("width", panelWidth);
                 panel.element.style.visibility = "visible";
